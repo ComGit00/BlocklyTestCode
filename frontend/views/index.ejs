@@ -1,0 +1,17 @@
+<head>
+  <!-- blockly 내용 -->
+  <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+  <!-- <script src="blockly_compressed.js"></script>
+  <script src="blocks_compressed.js"></script> -->
+  <script type="text/javascript" src="/ko.js"></script>
+  <script type="text/javascript" src="/blockBox/block/blockTest.js"></script>
+  <script type="text/javascript" src="/blockBox/list/listTest.js"></script>
+</head>
+
+<div id="blocklyDiv" style="height: 100%; width: 100%;"></div>
+
+<script>
+  //  blocklyDiv 아이디로 생성된 html 테그에 블록내용 생성
+  Blockly.inject('blocklyDiv', {toolbox: toolbox});
+
+</script>
