@@ -8,10 +8,19 @@
   <script type="text/javascript" src="/blockBox/list/listTest.js"></script>
 </head>
 
-<div id="blocklyDiv" style="height: 100%; width: 100%;"></div>
+<body>
+  <p>툴박스 형식</p>
+  <div id="blocklyDiv1" style="height: 30%; width: 1000px;"></div>
+  <p>카테고리 형식</p>
+  <div id="blocklyDiv2" style="height: 30%; width: 1000px;"></div>
+  <p>카테고리-카테고리 형식</p>
+  <div id="blocklyDiv3" style="height: 30%; width: 1000px;"></div>
+</body>
 
 <script>
   //  blocklyDiv 아이디로 생성된 html 테그에 블록내용 생성
-  Blockly.inject('blocklyDiv', {toolbox: toolbox});
+  Blockly.inject('blocklyDiv1', {toolbox: toolbox1});
+  Blockly.inject('blocklyDiv2', {toolbox: toolbox2});
+  Blockly.inject('blocklyDiv3', {toolbox: toolbox3});
 
 </script>
